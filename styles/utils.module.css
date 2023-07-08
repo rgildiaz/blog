@@ -29,6 +29,10 @@
   border-radius: 9999px;
 }
 
+.borderBottom {
+  border-bottom: 1px solid black;
+}
+
 .colorInherit {
   color: inherit;
 }
