@@ -9,18 +9,37 @@ body {
 
 * {
   box-sizing: border-box;
+  animation: fadeInAnimation ease-in 0.15s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 a {
-  color: #0070f3;
+  color: #37559e;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+  font-style: italic;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+body {
+    animation: fadeInAnimation ease-in 0.15s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
