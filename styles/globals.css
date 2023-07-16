@@ -2,7 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'IBM Plex Sans', sans-serif;
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  font-family: none;
   line-height: 1.6;
   font-size: 18px;
 }
@@ -36,7 +37,17 @@ h4,
 h5,
 h6,
 blockquote {
-  font-family: "IBM Plex Serif", serif;
+  /* font-family: "ibm plex serif", serif; */
+}
+
+pre {
+  font-size: 16px;
+  white-space: pre;
+  overflow-x: scroll;
+  border-radius: 5px;
+  background-color: #25262e;
+  color: whitesmoke;
+  padding: 5px 8px;
 }
 
 body {
