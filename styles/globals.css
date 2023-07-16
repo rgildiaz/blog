@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: none;
+  font-family: 'IBM Plex Sans', sans-serif;
   line-height: 1.6;
   font-size: 18px;
 }
@@ -29,17 +29,27 @@ img {
   display: block;
 }
 
-body {
-    animation: fadeInAnimation ease-in 0.15s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+  font-family: "IBM Plex Serif", serif;
 }
- 
+
+body {
+  animation: fadeInAnimation ease-in 0.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
