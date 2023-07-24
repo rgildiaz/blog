@@ -5,9 +5,7 @@ date: '2023-07-15'
 
 ```
 i am nothing but a cog
-in the human suffering machine,
-forever perpetuating the problem,
-unable to escape.
+in the human suffering machine.
 ```
 
 <!-- Recently, I started my first full-time job, working as a software engineer at an advertising agency.  -->
