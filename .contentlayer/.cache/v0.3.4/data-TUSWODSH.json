@@ -1,0 +1,23 @@
+{
+  "cacheItemsMap": {
+    "test.md": {
+      "document": {
+        "title": "This is a title",
+        "date": "2023-12-26T00:00:00.000Z",
+        "_id": "test.md",
+        "_raw": {
+          "sourceFilePath": "test.md",
+          "sourceFileName": "test.md",
+          "sourceFileDir": ".",
+          "contentType": "markdown",
+          "flattenedPath": "test"
+        },
+        "type": "Post",
+        "url": "/posts/test"
+      },
+      "documentHash": "1703648046029",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    }
+  }
+}
