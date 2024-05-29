@@ -4,6 +4,7 @@ import BlogPostList from "../components/blogPostList";
 import utilStyles from "../styles/utils.module.css";
 import homeStyles from "../styles/Home.module.css";
 import { getSortedPostsData } from "../lib/posts";
+import Link from "next/link";
 
 export async function getStaticProps() {
   // TODO: it would be nice to be able to move this out of this component, but getStaticProps only works for /pages
@@ -22,7 +23,16 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={homeStyles.page_title}>
-        <p>Hi, welcome. I'm Rafi.</p>
+        <p>Hi, welcome! I'm Rafi.</p>
+        <p>
+          I <Link href="https://github.com/rgildiaz">write code</Link> for
+          money, and sometimes I{" "}
+          <Link href="https://soundcloud.com/rafigildiaz">make music</Link>. If
+          you want to get in contact, it's probably best to use something like{" "}
+          <Link href="https://linkedin.com/in/rafael-gil-diaz">LinkedIn</Link>.
+          You can find the source code for this website on{" "}
+          <Link href="https://github.com/rgildiaz/blog">GitHub</Link>.
+        </p>
       </section>
       <section className={`${utilStyles.padding1px}`}>
         <BlogPostList allPostsData={allPostsData} />
