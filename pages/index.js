@@ -1,12 +1,12 @@
 import Head from "next/head";
-import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
-import Date from "../components/date";
-import { getSortedPostsData } from "../lib/posts";
+import BlogPostList from "../components/blogPostList";
 import utilStyles from "../styles/utils.module.css";
 import homeStyles from "../styles/Home.module.css";
+import { getSortedPostsData } from "../lib/posts";
 
 export async function getStaticProps() {
+  // TODO: it would be nice to be able to move this out of this component, but getStaticProps only works for /pages
   const allPostsData = getSortedPostsData();
   return {
     props: {
@@ -25,16 +25,7 @@ export default function Home({ allPostsData }) {
         <p>Hi, welcome. I'm Rafi.</p>
       </section>
       <section className={`${utilStyles.padding1px}`}>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={`${utilStyles.listItem} ${utilStyles.flex}`} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
+        <BlogPostList allPostsData={allPostsData} />
       </section>
     </Layout>
   );
