@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
-import Date from "../components/date";
+import blogPostList from "../components/blogPostList";
 import { getSortedPostsData } from "../lib/posts";
 import utilStyles from "../styles/utils.module.css";
 import homeStyles from "../styles/Home.module.css";
@@ -25,16 +24,7 @@ export default function Home({ allPostsData }) {
         <p>Hi, welcome. I'm Rafi.</p>
       </section>
       <section className={`${utilStyles.padding1px}`}>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={`${utilStyles.listItem} ${utilStyles.flex}`} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
+        {blogPostList(allPostsData)}
       </section>
     </Layout>
   );
