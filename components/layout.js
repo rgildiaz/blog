@@ -4,6 +4,26 @@ import Link from "next/link";
 
 export const siteTitle = "Rafi's blog";
 
+function Header() {
+  return (
+    <header className={styles.header}>
+      <h1>
+        <Link href="/">🦥 🔛 💸</Link>
+      </h1>
+      <nav className={styles.nav}>
+        <ul>
+          <li>
+            <Link href="/projects">projects</Link>
+          </li>
+          <li>
+            <Link href="/posts">blog</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
@@ -13,12 +33,8 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <Header />
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">... go home</Link>
-        </div>
-      )}
     </div>
   );
 }
