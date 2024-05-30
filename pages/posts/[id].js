@@ -4,6 +4,7 @@ import Head from "next/head";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 import postStyles from "../../styles/Post.module.css";
+import Link from "next/link";
 
 export default function Post({ postData }) {
   return (
@@ -12,7 +13,9 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article>
-        <div className={`${postStyles.title_container} ${utilStyles.borderBottom}`}>
+        <div
+          className={`${postStyles.title_container} ${utilStyles.borderBottom}`}
+        >
           <h1 className={postStyles.title}>{postData.title}</h1>
           <div className={utilStyles.lightText}>
             <small>
@@ -21,6 +24,9 @@ export default function Post({ postData }) {
           </div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className={postStyles.backToHome}>
+          <Link href="/">... go home</Link>
+        </div>
       </article>
     </Layout>
   );
