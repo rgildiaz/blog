@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <h1>
-        <Link href="/">🦥 🔛 💸</Link>
+        <Link href="/">® ª ₣ ⥍</Link>
       </h1>
       <nav className={styles.nav}>
         <ul>
@@ -16,7 +16,7 @@ function Header() {
             <Link href="/projects">projects</Link>
           </li>
           <li>
-            <Link href="/posts">blog</Link>
+            <Link href="/blog">blog</Link>
           </li>
         </ul>
       </nav>
