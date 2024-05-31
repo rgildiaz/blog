@@ -12,11 +12,15 @@ export default function Header() {
     setIsClient(true);
   }, []);
 
+  const Title = () => {
+    return <h1>{isClient ? getRandomTitle() : "Rafi"}</h1>;
+  };
+
   return (
     <header className={styles.header}>
-      <h1>
-        <Link href="/">{isClient && getRandomTitle()}</Link>
-      </h1>
+      <Link href="/">
+        <Title />
+      </Link>
       <nav className={styles.nav}>
         <ul>
           <li>
