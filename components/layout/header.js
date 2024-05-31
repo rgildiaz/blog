@@ -25,6 +25,9 @@ export default function Header() {
           <li>
             <Link href="/blog">blog</Link>
           </li>
+          <li>
+            <Link href="/resume">resume</Link>
+          </li>
         </ul>
       </nav>
     </header>
