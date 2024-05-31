@@ -1,5 +1,5 @@
 ---
-title: "(official 💯💯) really long test file (very necessary (site will break without this (just kidding)))"
+title: "test"
 date: "2024-05-30"
 ---
 
