@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/layout/layout";
 import BlogPostList from "../components/blogPostList";
 import utilStyles from "../styles/utils.module.css";
 import homeStyles from "../styles/Home.module.css";
@@ -18,7 +18,7 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
