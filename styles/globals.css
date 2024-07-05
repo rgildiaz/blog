@@ -14,6 +14,11 @@ body {
   animation-fill-mode: forwards;
 }
 
+h1 {
+  font-weight: normal;
+  font-size: 2em;
+}
+
 a {
   color: #37559e;
   text-decoration: none;
