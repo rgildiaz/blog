@@ -15,12 +15,30 @@ const BlogPost = ({ id, date, title }) => {
   );
 };
 
-export default function BlogPostList({ allPostsData }) {
+export default function BlogPostList({ allPostsData, maxItems }) {
+  /**
+   * A dynamic list of blog posts.
+   * @param {Array} allPostsData - Required to render. Fetched from getSortedPostsData()
+   * @param {Number} maxItems - Optional. By default, all items will be displayed. If provided, only the first maxItems will be displayed, and a link to the blog will be displayed at the end.
+   */
+  let displayMore = false;
+  if (maxItems < allPostsData.length) {
+    allPostsData = allPostsData.slice(0, maxItems);
+    displayMore = true;
+  }
+
   return (
     <ul className={utilStyles.list}>
       {allPostsData.map(({ id, date, title }) => (
         <BlogPost id={id} date={date} title={title} key={id} />
       ))}
+      {displayMore ? (
+        <li className={`${utilStyles.listItem}`}>
+          <Link href="/blog">
+            <p>... and more</p>
+          </Link>
+        </li>
+      ) : null}
     </ul>
   );
 }
