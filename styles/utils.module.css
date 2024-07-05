@@ -22,13 +22,28 @@
 
 .listItem {
   margin: 0 0 1.25rem;
+  display: block;
+}
+
+.listItem:hover p {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.listItem p {
+  margin: 0;
+}
+
+.listItem a {
+  width: 100%;
+  height: 100%;
 }
 
 .lightText {
   color: #666;
 }
 
- .flex {
+.flex {
   display: flex;
   flex-direction: column;
 }

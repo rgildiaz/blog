@@ -15,6 +15,10 @@
 }
 
 .header::before {
+  /* This is used to create the blur effect on the header.
+   These styles aren't on the header element itself for more 
+   specific control over size and positioning without affecting 
+   the header content */
   content: "";
   position: absolute;
   top: 0;
@@ -42,9 +46,6 @@
 }
 
 .header a {
-  display: block;
-  height: 100%;
-  width: 100%;
   color: black;
 }
 
@@ -72,4 +73,10 @@
 .nav li:hover {
   text-decoration: underline;
   text-decoration-style: wavy;
+}
+
+.nav a {
+  display: block;
+  height: 100%;
+  width: 100%;
 }

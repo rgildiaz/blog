@@ -5,10 +5,12 @@ import utilStyles from "../styles/utils.module.css";
 const BlogPost = ({ id, date, title }) => {
   return (
     <li className={`${utilStyles.listItem} ${utilStyles.flex}`} key={id}>
-      <Link href={`/blog/${id}`}>{title}</Link>
-      <small className={utilStyles.lightText}>
-        <Date dateString={date} />
-      </small>
+      <Link href={`/blog/${id}`}>
+        <p>{title}</p>
+        <small className={utilStyles.lightText}>
+          <Date dateString={date} />
+        </small>
+      </Link>
     </li>
   );
 };
