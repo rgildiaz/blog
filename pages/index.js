@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout/layout";
+import Layout from "../components/layout/layout";
 import BlogPostList from "../components/blogPostList";
 import utilStyles from "../styles/utils.module.css";
 import homeStyles from "../styles/Home.module.css";
@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Rafi's website</title>
       </Head>
       <section className={homeStyles.page_title}>
         <p>Hi, welcome! I'm Rafi.</p>

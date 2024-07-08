@@ -10,7 +10,7 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{`Rafi's blog | ${postData.title}`}</title>
       </Head>
       <article>
         <div
