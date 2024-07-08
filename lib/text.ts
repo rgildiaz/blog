@@ -1,12 +1,12 @@
 export const LETTER_VARIATIONS = {
-  r: "r r r r ŕ ṙ ř ȑ ȓ ṛ ŗ ṟ ṝ ɍ",
-  R: "R Ŕ Ṙ Ř Ȑ Ȓ Ṛ Ŗ Ṟ Ṝ Ʀ Ɍ Ɽ 𝐑 𝖱",
+  r: "r r ŕ ṙ ř ȑ ȓ ṛ ŗ ṟ ṝ ɍ",
+  R: "R R Ŕ Ṙ Ř Ȑ Ȓ Ṛ Ŗ Ṟ Ṝ Ʀ Ɍ Ɽ",
 };
 
 export function getRandomTitle() {
   const seeds: string[] = [
-    "rrrr",
-    "r",
+    // "rrrr",
+    // "r",
     "R",
   ]
   return getRandomVariation(choose(seeds));
