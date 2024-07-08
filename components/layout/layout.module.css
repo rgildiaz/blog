@@ -1,7 +1,7 @@
 .container {
   max-width: 36rem;
   padding: 1rem;
-  margin: 3rem auto 6rem;
+  margin: 2em auto;
 }
 
 .header {
@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
   position: sticky;
-  top: 1em;
+  top: 0.5em;
   z-index: 100;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .header h1 {
-  font-size: 3.5em;
+  font-size: 3em;
   font-style: normal;
   font-weight: normal;
   margin: 0;
