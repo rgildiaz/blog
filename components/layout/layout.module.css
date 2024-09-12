@@ -14,11 +14,11 @@
   z-index: 100;
 }
 
+/* This is used to create the blur effect on the header.
+ These styles aren't on the header element itself for more 
+ specific control over size and positioning without affecting 
+ the header content */
 .header::before {
-  /* This is used to create the blur effect on the header.
-   These styles aren't on the header element itself for more 
-   specific control over size and positioning without affecting 
-   the header content */
   content: "";
   position: absolute;
   top: 0;
