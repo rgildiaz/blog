@@ -39,7 +39,8 @@ export default function Home({ allPostsData }) {
           .
         </p>
       </section>
-      <section className={`${utilStyles.padding1px}`}>
+      <section id="blog">
+				<h2>Blog</h2>
         <BlogPostList allPostsData={allPostsData} maxItems={10} />
       </section>
     </Layout>
