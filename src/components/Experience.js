@@ -4,7 +4,7 @@ import Link from "./subcomponents/Link";
 
 export default function Experience() {
   return (
-    <Section name="what i've done">
+    <Section name="projects">
       <Card name="dstl" date="fall 22" align="right">
         <Link href="https://uiucdstl.wixsite.com/uiucdstl">website</Link>|<Link href="https://github.com/rgildiaz/dstl-mockups">github</Link>
         <p>

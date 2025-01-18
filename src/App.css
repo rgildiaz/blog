@@ -164,21 +164,14 @@ li::before {
 }
 
 .contacts-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+  display:  grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   justify-content: center;
-  text-align: center;
-  margin-top: 30px;
 }
 
 .contacts-container * {
-  width: max(30px, 5vmin);
-  font-size: max(30px, 5vmin);
-}
-
-.contacts-container>* {
-  padding: 0 5vmin 0 5vmin;
+  margin: auto;
 }
 
 footer * {
@@ -193,12 +186,4 @@ Section[id='who i am'] ul li a {
 
 Section[id='who i am'] ul li a:hover {
   color: white;
-}
-
-.contacts-container a img {
-  filter: brightness(45%);
-}
-
-.contacts-container a img:hover {
-  filter: none;
 }

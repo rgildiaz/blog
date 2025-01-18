@@ -5,7 +5,9 @@ export default function About() {
     <Section name="who i am">
       <ul>
         <li>
-          a <strong>student</strong> at UIUC studying{" "}
+          a <strong>software engineer</strong> at <a href='https://pmg.com' target="_blank" rel='noreferrer'>PMG</a> focused on developing internal advertising automation tools.
+        </li>
+        <li>a graduate from <strong>UIUC</strong> with a B.S. in{" "}
           <a
             href="https://ischool.illinois.edu/"
             target="_blank"
@@ -13,7 +15,7 @@ export default function About() {
           >
             information science
           </a>{" "}
-          and{" "}
+          and a B.A. in{" "}
           <a
             href="https://music.illinois.edu/area/music-technology"
             target="_blank"
@@ -24,29 +26,8 @@ export default function About() {
           ,
         </li>
         <li>
-          an <strong>operations support intern</strong> at the{" "}
-          <a href="https://iti.illinois.edu/" target="_blank" rel="noreferrer">
-            Information Trust Institute
-          </a>
-          ,
-        </li>
-        <li>
-          an <strong>undergraduate researcher</strong> helping build a{" "}
-          <a
-            href="https://uiucdstl.wixsite.com/uiucdstl"
-            target="_blank"
-            rel="noreferrer"
-          >
-            data storytelling toolkit for librarians
-          </a>
-          ,
-        </li>
-        <li>
-          a <strong>musician</strong> interested in algorithmic composition and
-          computer music, and
-        </li>
-        <li>
-          a <strong>team lead</strong> at UIUC's tech services help desk.
+          a <strong>musician</strong> interested in algorithmic composition,
+          computer music, and other electronic music.
         </li>
       </ul>
     </Section>
