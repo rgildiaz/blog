@@ -1,0 +1,189 @@
+@font-face {
+  font-family: IBM Plex Mono;
+  src: url(fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: JetBrains Mono;
+  src: url(fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: JetBrains Bold;
+  src: url(fonts/JetBrains_Mono/static/JetBrainsMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 11vh;
+}
+
+:root {
+  background-color: #282c34;
+  --student-em-color: rgba(48, 139, 188, 0.35);
+  --blog-em-color: rgba(74, 191, 133, 0.5);
+  --music-em-color: rgba(217, 143, 198, 0.5);
+  --em-color0: rgb(48, 139, 188);
+  --em-color1: rgb(34, 101, 136);
+  --em-color2: rgb(20, 60, 82);
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: white;
+}
+
+.card-title p {
+  font-size: calc(8px + 1vmin);
+}
+
+a,
+p,
+li {
+  font-size: calc(14px + 0.5vmin);
+}
+
+h2 {
+  font-size: calc(14px + 2vmin);
+}
+
+h3 {
+  font-size: calc(14px + 1.5vmin);
+}
+
+p,
+li {
+  color: lightgray;
+  text-align: justify;
+}
+
+@media (max-device-width: 399px) {
+  p, li {
+    text-align: left;
+  }
+}
+
+strong {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: max(1vmin, 10px);
+  text-indent: -1em;
+}
+
+li::before {
+  content: ">";
+  padding-right: 0.4em;
+}
+
+.em {
+  text-shadow: 3px 3px var(--em-color0), 6px 6px var(--em-color1),
+    9px 9px var(--em-color2);
+}
+
+.App {
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Navbar */
+
+.nav-wrapper {
+  display: block;
+  position: sticky;
+  top: -1px;
+  background: rgba(26, 29, 34, 0);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link:hover {
+  animation: 0.5s menuHover steps(3, end) forwards;
+  color: white;
+}
+
+.logo {
+  padding-right: calc(10px + 3vmin);
+  font-size: calc(20px + 3vmin);
+  color: white;
+  font-weight: bolder;
+}
+
+.nav-link {
+  padding-right: calc(5px + 1vmin);
+}
+
+@keyframes menuHover {
+  from {}
+
+  33% {
+    text-shadow: 2px 2px var(--em-color0);
+  }
+
+  66% {
+    text-shadow: 2px 2px var(--em-color0), 4px 4px var(--em-color1);
+  }
+
+  to {
+    text-shadow: 2px 2px var(--em-color0), 4px 4px var(--em-color1),
+      6px 6px var(--em-color2);
+  }
+}
+
+
+/* Main Content */
+
+.caret-down {
+  position: absolute;
+  bottom: 0;
+  color: gray;
+}
+
+.card-links {
+  color: lightgray;
+}
+
+.contacts-container {
+  display:  grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+
+.contacts-container * {
+  margin: auto;
+}
+
+footer * {
+  font-size: 12px;
+  color: gray;
+}
+
+Section[id='who i am'] ul li a {
+  color: lightgray;
+  text-decoration: underline dotted 1px gray;
+}
+
+Section[id='who i am'] ul li a:hover {
+  color: white;
+}
