@@ -1,13 +1,11 @@
 import Head from "next/head";
 import Layout from "../components/layout/layout";
 import BlogPostList from "../components/blogPostList";
-import utilStyles from "../styles/utils.module.css";
 import homeStyles from "../styles/Home.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 
 export async function getStaticProps() {
-  // TODO: it would be nice to be able to move this out of this component, but getStaticProps only works for /pages
   const allPostsData = getSortedPostsData();
   return {
     props: {
@@ -40,8 +38,8 @@ export default function Home({ allPostsData }) {
         </p>
       </section>
       <section id="blog">
-				<h2>Blog</h2>
-        <BlogPostList allPostsData={allPostsData} maxItems={10} />
+				<h2>Recent Posts</h2>
+        <BlogPostList allPostsData={allPostsData} maxItems={3} />
       </section>
     </Layout>
   );
