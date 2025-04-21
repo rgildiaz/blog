@@ -25,20 +25,28 @@ export default function Home({ allPostsData }) {
         <p>
           I <Link href="https://github.com/rgildiaz">write code</Link> for
           money, and sometimes I{" "}
-          <Link href="https://soundcloud.com/rafigildiaz">make music</Link>. If
-          you want to get in contact it's probably best to use something like{" "}
-          <Link href="https://linkedin.com/in/rafael-gil-diaz">
-            my LinkedIn
-          </Link>
+          <Link href="https://soundcloud.com/rafigildiaz">make music</Link>
           . You can find{" "}
           <Link href="https://github.com/rgildiaz/blog">
             the source code for this website on GitHub
           </Link>
           .
         </p>
+        <div className={homeStyles.contact_links}>
+          <h2>Contact me:</h2>
+          <div>
+            <Link href="mailto:rfgildiaz@gmail.com">rfgildiaz@gmail.com</Link>
+            <Link href="https://linkedin.com/in/rafael-gil-diaz">
+              LinkedIn
+            </Link>
+            <Link href="https://github.com/rgildiaz">
+              GitHub
+            </Link>
+          </div>
+        </div>
       </section>
       <section id="blog">
-				<h2>Recent Posts</h2>
+        <h2>Recent Posts</h2>
         <BlogPostList allPostsData={allPostsData} maxItems={3} />
       </section>
     </Layout>

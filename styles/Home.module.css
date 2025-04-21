@@ -7,3 +7,17 @@
 .page_title p {
   padding: 0px;
 }
+
+.contact_links > h2{
+  margin: 0;
+  font-size: 1em;
+}
+
+.contact_links div {
+  display: flex;
+  gap: 1em;
+}
+
+.contact_links a {
+  text-decoration: none;
+}
