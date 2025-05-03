@@ -22,11 +22,13 @@ export default function Blog({ allPostsData }) {
         style={{
           margin: "0 0 2em 0",
           padding: "1em 0",
-          // borderBottom: "1px solid black",
+          borderBottom: "1px solid black",
         }}
       >
         <h1>Blog</h1>
-        {/* <p style={{ textAlign: "justify" }}></p> */}
+        <p>
+          Go home. Play music. Feel better.
+        </p>
       </div>
       <BlogPostList allPostsData={allPostsData} />
     </Layout>

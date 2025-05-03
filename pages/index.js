@@ -32,18 +32,11 @@ export default function Home({ allPostsData }) {
           </Link>
           .
         </p>
-        <div className={homeStyles.contact_links}>
-          <h2>Contact me:</h2>
-          <div>
-            <Link href="mailto:rfgildiaz@gmail.com">rfgildiaz@gmail.com</Link>
-            <Link href="https://linkedin.com/in/rafael-gil-diaz">
-              LinkedIn
-            </Link>
-            <Link href="https://github.com/rgildiaz">
-              GitHub
-            </Link>
-          </div>
-        </div>
+        <p>Contact me: {" "}
+        <br />
+          <Link href="mailto:rfgildiaz@gmail.com">rfgildiaz@gmail.com</Link>{" | "}
+          <Link href="https://linkedin.com/in/rafael-gil-diaz">LinkedIn</Link>
+        </p>
       </section>
       <section id="blog">
         <h2>Recent Posts</h2>

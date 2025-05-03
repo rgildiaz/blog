@@ -37,6 +37,14 @@ function getRandomChar(options: string | string[]) {
   return choose(options);
 }
 
-function choose(arr: string[]) {
+/**
+ * Randomly chooses an element from an array.
+ * @param arr The array to choose from.
+ * @returns A random element from the array.
+ * @example
+ * const randomElement = choose(["apple", "banana", "cherry"]);
+ * console.log(randomElement); // Could be "apple", "banana", or "cherry"
+ */
+export function choose(arr: any[] ) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
