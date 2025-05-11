@@ -24,7 +24,7 @@ export default function Header() {
       <nav className={styles.nav}>
         <ul>
           <li>
-            <Link href="/projects">projects</Link>
+            <Link href="/">home</Link>
           </li>
           <li>
             <Link href="/blog">blog</Link>
