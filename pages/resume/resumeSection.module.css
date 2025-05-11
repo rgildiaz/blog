@@ -1,0 +1,74 @@
+.title_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.title_block h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.date {
+    font-size: 0.5rem;
+    color: #666;
+    font-style: italic;
+}
+
+.section {
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.section h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.section h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+.section p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.section ul {
+    padding-left: 1rem;
+    text-align: justify;
+}
+
+.section ul li {
+    margin-bottom: 0.25rem;
+}
+
+.section .subsection {
+    margin: 0;
+    list-style: none;
+}
+
+@media screen and (max-width: 500px) {
+    /* Don't indent subsections on mobile devices */
+    .section .subsection{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.subsection_title {
+    margin: 0 0 0.5rem 0;
+}
+
+.subsection_title div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
