@@ -72,3 +72,12 @@ body {
     opacity: 1;
   }
 }
+
+/* image captions */
+img + em {
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  color: #555;
+}
