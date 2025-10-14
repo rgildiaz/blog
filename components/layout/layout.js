@@ -10,6 +10,7 @@ export default function Layout({ children }) {
         <meta name="description" content="Rafi's blog" />
         <meta name="og:title" content="Rafi's blog" />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.0/styles/github-dark.min.css" />
       </Head>
       <Header />
       <main>{children}</main>
