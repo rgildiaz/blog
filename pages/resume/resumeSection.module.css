@@ -4,7 +4,7 @@
     align-items: center;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--rule);
     width: 100%;
 }
 
@@ -13,10 +13,37 @@
     padding: 0;
 }
 
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 1rem;
+}
+
+.title_block a:hover,
+.section a:hover {
+    text-decoration: underline;
+}
+
+.summary {
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+
 .date {
-    font-size: 0.5rem;
-    color: #666;
+    font-size: 0.85rem;
+    color: var(--muted);
     font-style: italic;
+}
+
+.org {
+    font-style: italic;
+}
+
+.more {
+    font-size: 0.85rem;
+    font-style: italic;
+    white-space: nowrap;
 }
 
 .section {
@@ -25,14 +52,15 @@
 }
 
 .section h2 {
-    margin: 0;
+    margin: 0 0 0.5rem 0;
     padding: 0;
+    border-bottom: 1px solid var(--rule);
 }
 
 .section h3 {
     margin: 0;
     padding: 0;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
 }
 
 .section p {
@@ -43,7 +71,7 @@
 
 .section ul {
     padding-left: 1rem;
-    text-align: justify;
+    margin: 0.5rem 0 0 0;
 }
 
 .section ul li {
@@ -51,24 +79,59 @@
 }
 
 .section .subsection {
-    margin: 0;
+    margin: 0 0 1.5rem 0;
     list-style: none;
 }
 
-@media screen and (max-width: 500px) {
-    /* Don't indent subsections on mobile devices */
-    .section .subsection{
-        padding: 0;
-        margin: 0;
-    }
-}
-
 .subsection_title {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.25rem 0;
 }
 
 .subsection_title div {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: baseline;
+    column-gap: 1rem;
+}
+
+/* Tighter spacing so the printed PDF fits on one page */
+@media print {
+    .title_block {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .title_block h1 {
+        font-size: 2.2rem;
+    }
+
+    .summary {
+        margin-top: 0.5rem;
+    }
+
+    .section {
+        margin: 0.75rem 0;
+    }
+
+    .section h2 {
+        font-size: 1.3rem;
+    }
+
+    .section h3 {
+        font-size: 1.05rem;
+    }
+
+    .section .subsection {
+        margin-bottom: 0.6rem;
+    }
+
+    .section ul li {
+        margin-bottom: 0.1rem;
+    }
+
+    .date {
+        font-size: 0.9rem;
+    }
 }
