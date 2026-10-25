@@ -15,8 +15,8 @@
 }
 
 /* This is used to create the blur effect on the header.
- These styles aren't on the header element itself for more 
- specific control over size and positioning without affecting 
+ These styles aren't on the header element itself for more
+ specific control over size and positioning without affecting
  the header content */
 .header::before {
   content: "";
@@ -25,8 +25,9 @@
   left: -5%;
   width: 110%;
   height: 100%;
-  background-color: #ffffff7e;
+  background-color: var(--header-background);
   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-radius: 10px;
   z-index: -1;
 }
@@ -46,7 +47,7 @@
 }
 
 .header a {
-  color: black;
+  color: var(--text);
 }
 
 .header a:hover {
@@ -61,12 +62,13 @@
 .nav ul {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
   list-style: none;
   margin-bottom: 0;
+  padding-left: 1rem;
 }
 
 .nav li {
-  margin-right: 1rem;
   font-style: italic;
 }
 
@@ -79,4 +81,29 @@
   display: block;
   height: 100%;
   width: 100%;
+}
+
+.nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 1rem;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+@media print {
+  .container {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
 }

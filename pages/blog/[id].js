@@ -1,6 +1,5 @@
 import Layout from "../../components/layout/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
-import Head from "next/head";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 import postStyles from "../../styles/Post.module.css";
@@ -8,10 +7,7 @@ import Link from "next/link";
 
 export default function Post({ postData }) {
   return (
-    <Layout>
-      <Head>
-        <title>{`Rafi's blog | ${postData.title}`}</title>
-      </Head>
+    <Layout title={postData.title} description={postData.description}>
       <article>
         <div
           className={`${postStyles.title_container} ${utilStyles.borderBottom}`}

@@ -3,7 +3,7 @@
 }
 
 .borderBottom {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--rule);
 }
 
 .colorInherit {
@@ -40,10 +40,16 @@
 }
 
 .lightText {
-  color: #666;
+  color: var(--muted);
 }
 
 .flex {
   display: flex;
   flex-direction: column;
+}
+
+/* The heading block at the top of a listing page (blog, work) */
+.pageTitle {
+  margin: 0 0 2em 0;
+  padding: 1em 0;
 }
