@@ -1,9 +1,27 @@
 .page_title {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--rule);
   margin: 2em 0;
   padding: 1em 0;
 }
 
 .page_title p {
   padding: 0px;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0;
+  font-style: italic;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  margin: 0 0 2.5em;
 }
